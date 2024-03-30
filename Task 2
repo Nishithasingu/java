@@ -1,0 +1,14 @@
+The process of compiling and running Java programs using the JDK (Java Development Kit) and JVM (Java Virtual Machine). 
+Let me summarize the main points:
+ 1.Compilation:
+   Java source code (.java files) is compiled using the javac compiler, which is part of the JDK.
+   The output of compilation is bytecode (.class files), not machine code.
+ 2.Execution:
+   JVM (Java Virtual Machine) executes Java bytecode.
+   JVM loads .class files into memory through a component called the class loader.
+   Bytecode verifier checks the validity of .class files to ensure they are not corrupt or malicious.
+   JIT (Just-In-Time) or AOT (Ahead-Of-Time) compilation may be used to optimize performance by converting bytecode to machine code during execution.
+   Security Manager ensures the security of the Java runtime environment by enforcing security policies.
+ 3.Running Java Programs:
+   To run a Java program, you need the JRE (Java Runtime Environment), which includes JVM.
+   You execute the program using the java command followed by the class name (without the .class extension).
