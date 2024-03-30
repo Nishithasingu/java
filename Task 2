@@ -1,4 +1,5 @@
-The process of compiling and running Java programs using the JDK (Java Development Kit) and JVM (Java Virtual Machine). 
+Question 1: The process of compiling and running Java programs using the JDK (Java Development Kit) and JVM (Java Virtual Machine). 
+
 Let me summarize the main points:
  1.Compilation:
    Java source code (.java files) is compiled using the javac compiler, which is part of the JDK.
@@ -12,3 +13,20 @@ Let me summarize the main points:
  3.Running Java Programs:
    To run a Java program, you need the JRE (Java Runtime Environment), which includes JVM.
    You execute the program using the java command followed by the class name (without the .class extension).
+
+Question 2:  JAVA SE JAVA EE JAVA ME
+
+why it is named as JDK, J2SE, Java SE
+ 1.JDK (Java Development Kit):
+    The JDK is a software development kit used for developing Java applications.
+    It includes tools such as the Java compiler (javac), Java runtime environment (java), and various utilities for compiling, debugging, and packaging Java programs.
+    The name "JDK" has been used consistently throughout Java's history to denote the kit developers use to build Java applications.
+2.J2SE (Java 2 Platform, Standard Edition):
+     In the late 1990s and early 2000s, Java underwent significant updates and enhancements with the release of Java 2.
+     J2SE indicated the second major version of the Java platform, which introduced significant improvements and new features over the original Java Development Kit
+     The J2SE naming convention was used for several releases until it was eventually simplified to "Java SE."
+3.Java SE (Java Platform, Standard Edition):
+     The naming convention transitioned from "J2SE" to "Java SE" to reflect branding changes and to simplify the naming scheme.
+     Java Platform refers to the entire Java ecosystem, which includes different editions such as Java SE, Java EE, and Java ME.
+     Standard Edition continues to signify that Java SE is the standard platform for general-purpose development.
+     Java SE has been the standard name for the standard edition of Java since the mid-2000s.
