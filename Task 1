@@ -1,0 +1,42 @@
+**Identify the attributes and behaviours of these class employee**
+ Attributes:
+  name: Represents the name of the employee.
+  employeeID: Represents a unique identifier for the employee.
+  salary: Represents the salary of the employee.
+  department: Represents the department where the employee works.
+
+ Behaviors:
+  displayInformation(): Represents the action of displaying the employee's information.
+  increaseSalary() : Represents the action of increasing the employee's salary by a certain amount.
+
+**Identify the attributes and behaviours of these class hospital**
+ Attributes:
+  name: Represents the name of the hospital.
+  location: Represents the location of the hospital.
+  capacity: Represents the maximum number of patients the hospital can accommodate.
+  numberOfPatients: Represents the current number of patients in the hospital.
+ 
+ Behaviors:
+  admitPatient(): Represents the action of admitting a patient to the hospital.
+  dischargePatient(): Represents the action of discharging a patient from the hospital.
+
+**Identify the attributes and behaviours of these class vechicle**
+ Attributes:
+  brand: Represents the make or brand of the vehicle.
+  model: Represents the model of the vehicle.
+  year: Represents the year the vehicle was manufactured.
+  speed: Represents the current speed of the vehicle.
+
+ Behaviors:
+  accelerate(): Represents the action of accelerating the vehicle.
+  brake(): Represents the action of braking the vehicle.
+
+**Identify the attributes and behaviours of these class animal**
+ Attributes:
+  species: Represents the species of the animal (e.g., dog, cat, bird).
+  age: Represents the age of the animal.
+  color: Represents the color of the animal.
+ Behaviors:
+  eat(): Represents the action of the animal eating.
+  sleep(): Represents the action of the animal sleeping.
+  makeSound(): Represents the action of the animal making a sound.
