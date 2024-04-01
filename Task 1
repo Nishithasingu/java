@@ -1,4 +1,4 @@
-**Identify the attributes and behaviours of these class employee**
+**Identify the attributes and behaviours of the class employee**
  Attributes:
   name: Represents the name of the employee.
   employeeID: Represents a unique identifier for the employee.
@@ -9,7 +9,7 @@
   displayInformation(): Represents the action of displaying the employee's information.
   increaseSalary() : Represents the action of increasing the employee's salary by a certain amount.
 
-**Identify the attributes and behaviours of these class hospital**
+**Identify the attributes and behaviours of the class hospital**
  Attributes:
   name: Represents the name of the hospital.
   location: Represents the location of the hospital.
@@ -20,7 +20,7 @@
   admitPatient(): Represents the action of admitting a patient to the hospital.
   dischargePatient(): Represents the action of discharging a patient from the hospital.
 
-**Identify the attributes and behaviours of these class vechicle**
+**Identify the attributes and behaviours of the class vechicle**
  Attributes:
   brand: Represents the make or brand of the vehicle.
   model: Represents the model of the vehicle.
@@ -31,7 +31,7 @@
   accelerate(): Represents the action of accelerating the vehicle.
   brake(): Represents the action of braking the vehicle.
 
-**Identify the attributes and behaviours of these class animal**
+**Identify the attributes and behaviours of the class animal**
  Attributes:
   species: Represents the species of the animal (e.g., dog, cat, bird).
   age: Represents the age of the animal.
