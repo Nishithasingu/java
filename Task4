@@ -1,0 +1,60 @@
+TASK 1
+** Nested if statement **
+       A nested if statement is an if statement that is placed inside another if statement.
+       This allows for multiple conditions to be evaluated sequentially, providing more complex decision-making capabilities.
+Example:
+ 
+class NestedIf
+{
+public static void main(String[] args) {
+    int age = 25;
+    boolean isStudent = false;
+   if (age >= 18) {
+        System.out.println("You are an adult.");
+        if (isStudent) {
+            System.out.println("You are a student.");
+        } else {
+            System.out.println("You are not a student.");
+        }
+    } else {
+        System.out.println("You are a minor.");
+    }
+}
+}
+Output:
+You are an adult.
+You are not a student.
+
+
+TASK 2
+
+** When for loop becomes infinite **
+   
+  A for loop becomes infinite when its termination condition never evaluates to false. 
+  This can happen if the termination condition is missing or if the loop's increment/decrement logic prevents the condition from being false.
+
+Example:
+
+class InfiniteForLoop
+{
+public static void main (String args[]){
+                for(int i=10; i>0; i++){
+                System.out.println("Hello");
+   }
+ }
+}
+
+OUTPUT:
+Hello
+Hello
+Hello
+Hello
+.
+.
+.
+.
+.
+.
+
+
+
