@@ -59,6 +59,7 @@ Hello
 TASK3
  **Findinng primenumbers upto n. n is an integer**
 
+Solution:
 public class PrimeNumbers {
   public static void main(String[] args) {
     int num = 25;    // Define the upper limit
