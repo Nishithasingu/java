@@ -95,38 +95,52 @@ OUTPUT:
 TASK 4
 
   **Find the count of unique substrings**
+Solution:
+import java.util.HashSet;
+public class UniqueSubstringsCount {
+    public static void main(String[] args) {
+        String input = "abcabc";
+        int count = countUniqueSubstrings(input);
+        System.out.println("Count of unique substrings: " + count);
+    }
+    public static int countUniqueSubstrings(String input) {
+        HashSet<String> set = new HashSet<>();
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i + 1; j <= input.length(); j++) {
+                String substring = input.substring(i, j);
+                if (substring.length() > 1) {   // Exclude single character substrings
+                    set.add(substring);
+                }
+            }
+        }
+        return set.size();
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+Output:
+Count of unique substring : 12
 
 DAY 5  
 Task1
 **For Loop**
 
-Condition 1
-      int i=90;
+ Condition 1
+     
+     int i=90;
       for(;i>100;i++)
 Output:
    The Condition is false the loop  will not execute at all, and there will be no output
 
 Condition 2
+
       int i=90;
       for(;i>100;i--)
 Output:
    The Condition is false the loop will not execute , and there will be no output
 
 Condition 3
-      int i=90;
+      
+     int i=90;
       for(;;i++)
 Output:
 90
@@ -139,6 +153,7 @@ Output:
 .
 
 Condition 4
+      
       int i=90;
       for(;i<100;i++)
 Output:
@@ -154,7 +169,8 @@ Output:
 99
 
 Condition 5
-      int i=90;
+     
+     int i=90;
       for(;i<100;i+=2)
 Output:
 90
@@ -166,26 +182,21 @@ Output:
 TASK 2
       int 456 ==>4+5=> 9+6=> 15 => 1+5=> 6
 Solution:
-class SumOfDigits {
+ class SumOfDigits {
     public static void main(String[] args) {
-        int number = 6524;
-        int result = number;
-        while (result >= 10) {
+        int n = 5641;
+        while (n >= 10) {
             int sum = 0;
-            while (result != 0) {
-                sum += result % 10;
-                result /= 10;
+            while (n != 0) {
+                sum += n % 10;
+                n /= 10;
             }
-            result = sum;
+            n = sum;
         }
-        
-        System.out.println("Final result: " + result);
+        System.out.println("Final result: " + n);
     }
 }
-
 Output:
-Final result:8
-
-
+Final result:7
 
 
