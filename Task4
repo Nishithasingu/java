@@ -56,5 +56,136 @@ Hello
 .
 .
 
+TASK3
+ **Findinng primenumbers upto n. n is an integer**
+
+public class PrimeNumbers {
+  public static void main(String[] args) {
+    int num = 25;    // Define the upper limit
+    int count;       // Initialize counter for divisibility checks
+    for (int i = 1; i <= num; i++) {    // Iterate from 1 up to 'num' to identify prime numbers
+      count = 0;    // Reset counter for each 'i'
+                 // Check for divisibility from 2 up to i/2
+    for (int j = 2; j <= i / 2; j++) {
+        if (i % j == 0) {
+          count++;  // Increment if 'i' is divisible by 'j'
+          break;  // Exit loop if a divisor is found
+        }
+      }
+       // If the count is 0, 'i' is prime
+      if (count == 0) {
+        System.out.println(i);  // Output the prime number
+      }
+    }
+  }
+}
+
+OUTPUT:
+2
+3
+5
+7
+11
+13
+17
+19
+23
+
+
+TASK 4
+
+  **Find the count of unique substrings**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DAY 5  
+Task1
+**For Loop**
+
+Condition 1
+      int i=90;
+      for(;i>100;i++)
+Output:
+   The Condition is false the loop  will not execute at all, and there will be no output
+
+Condition 2
+      int i=90;
+      for(;i>100;i--)
+Output:
+   The Condition is false the loop will not execute , and there will be no output
+
+Condition 3
+      int i=90;
+      for(;;i++)
+Output:
+90
+91
+92
+.
+.
+.
+.
+.
+
+Condition 4
+      int i=90;
+      for(;i<100;i++)
+Output:
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+
+Condition 5
+      int i=90;
+      for(;i<100;i+=2)
+Output:
+90
+92
+94
+96
+98
+
+TASK 2
+      int 456 ==>4+5=> 9+6=> 15 => 1+5=> 6
+Solution:
+class SumOfDigits {
+    public static void main(String[] args) {
+        int number = 6524;
+        int result = number;
+        while (result >= 10) {
+            int sum = 0;
+            while (result != 0) {
+                sum += result % 10;
+                result /= 10;
+            }
+            result = sum;
+        }
+        
+        System.out.println("Final result: " + result);
+    }
+}
+
+Output:
+Final result:8
+
+
 
 
