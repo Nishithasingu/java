@@ -1,8 +1,33 @@
-TASK 4 and 5
+===================Task1 ====================
+     **Purpose of making constructor private**
+Soln:
+  The purpose of making a constructor private in Java is to restrict the instantiation of objects from outside the class. 
+Example:
+   public class Example {
+       private Example() {   // Private constructor
+       }
+public static Example createInstance() {   // Factory method to create Example objects
+    return new Example();
+    }
+} 
+
+=============Task2==================
+*****Can i make constr as final - impact ******
+
+No , Illegal modifier for the constructor in type ConstrEg2; only public, protected & private are permitted
+
+===================Task3===============
+*****if a keep int nearby constr - what happens******
+Soln:
+public class ConstrEg2 {
+private int  ConstrEg2() {
+//This method must return a result of type int
+}
+
+===========TASK 4 and 5 ===============
 **class emp, in main meth - if a craete 5 obj - it should print 5 as o/p
     **if u creat 3 obj - it  should print 3 obj
 Soln:
-
 class Emp {
     private static int count = 0; // Static variable will get memory when class is created
 
