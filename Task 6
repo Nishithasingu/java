@@ -1,0 +1,195 @@
+====================Task1=====================
+****what if my child class has lesser access modifier*****
+	private void walk()
+Soln:
+//if not found extend the search to primitives class.
+// Cannot reduce the visibility of the inherited method from primitives
+
+==================Task2=======================
+**Calc, scientific calc, programmer calc - implement complete inheritance(overriding,uniq methd...) **
+Soln:
+Standaredcalc  (parent class)
+  addition() {}
+	subtraction() {}
+	multiple() {}
+	division() {}
+  backspace() {}
+
+Programmercalc (child class)
+  addition() {}
+	subtraction() {}
+	multiple() {}
+	division() {}
+  backspace() {}
+
+Scientificcalc (child class)
+  addition() {}
+	subtraction() {}
+	multiple() {}
+	division() {}
+  backspace() {}
+
+Reationship between them
+========================
+Standaredcalc
+  private clear() ===> cannot be inherited by any subclass
+  addition() 
+	subtraction() 
+	multiple() 
+	division() 
+  backspace() 
+
+Programmercalc extends (is a) Standaredcalc=> Programmercalc can access all the methods of Standaredcalc=> (if method is not private)
+Scientificcalc extends (is a) Standaredcalc=> Scientificcalc can access all the methods of Standaredcalc
+
+unique method
+==============
+Programmercalc
+  addition() 
+	subtraction() 
+	multiple() 
+	division() 
+   backspace() 
+   bitwise()
+   
+Scientificcalc
+  addition() 
+	subtraction() 
+	multiple() 
+	division() 
+  backspace() 
+  trigonometry()
+
+Over riding
+==================
+re-defining the logic(over-writing) of the method in the child class 
+
+=======Standaredcalc.java===========
+public class Standaredcalc {
+	private void clear(){
+		System.out.println("all can't do this directly-can't be inherited");
+	}
+	public void addition(){
+		System.out.println("Adding");
+	}
+	public void subtraction(){
+		System.out.println("subtracting");
+	}
+	public void multiple(){
+		System.out.println("multiplying");
+	}
+	public void division(){
+		System.out.println("dividing");
+		}
+	public void backspace(){
+		System.out.println("clearence");
+	}
+}
+==========Programmercalc.java=============
+	public class Programmercalc extends Standaredcalc 
+{
+	public void bitwise()
+	{
+		System.out.println("bBinary Digit");
+}
+}
+==============	Scientificcalc================
+public class Scientificcalc extends Standaredcalc{
+	
+	public void trigonometry(){
+		System.out.println("trigonometry Symbols");
+
+}
+}
+============TestInheritance================
+public class TestInheritance {
+
+	public static void main(String[] args) {
+	Standaredcalc s=new Standaredcalc();
+    //s.bitwise(); not created in parent only in Programmercalc class its created
+   s.addition();
+	Programmercalc p=new Programmercalc();
+		p.addition();
+		p.subtraction();
+		p.multiple();
+		p.division();
+		p.backspace();
+		p.bitwise();
+Scientificcalc s1=new Scientificcalc();
+		s1.addition();
+		s1.subtraction();
+		s1.multiple();
+		s1.division();
+		s1.backspace();
+		s1.trigonometry();
+		}
+}
+OUTPUT:
+Adding
+Adding
+subtracting
+multiplying
+dividing
+clearence
+bBinary Digit
+Adding
+subtracting
+multiplying
+dividing
+clearence
+trigonometry Symbols
+
+========================Task3=====================
+***Radio, Tv, Dvd Player - identify the Apt parent class and implement inheritance***
+Soln:
+Entertainment Device (parent class)
+    brand(){}
+    audio(){}
+    poweron(){}
+    poweroff(){}
+Radio (child class)
+   brand(){}
+   audio(){}
+   poweron(){}
+   poweroff(){}
+   frequency(){} //unique method
+Tv (child class)
+   brand(){}
+   audio(){}
+   poweron(){}
+   poweroff(){}
+   video(){} // unique method
+Dvd Player (child class)
+   brand(){}
+   audio(){}
+   poweron(){}
+   poweroff(){}
+
+==========Task4=================
+***Admin, Manager, Finance - idetify the parent class and implement inheritance***
+Employee(parent class)
+  Empname(){}
+  EmpId(){}
+  department(){}
+  work(){}
+Admin(child class)
+  Empname(){}
+  EmpId(){}
+  department(){}
+  work(){}
+Mnanager(child class)
+  Empname(){}
+  EmpId(){}
+  department(){}
+  work(){}
+  emp records(){}
+Finance(child class)
+  Empname(){}
+  EmpId(){}
+  department(){}
+  work(){}
+  emp salary records() {} //unique method
+
+
+
+
