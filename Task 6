@@ -9,135 +9,28 @@ Soln:
 **Calc, scientific calc, programmer calc - implement complete inheritance(overriding,uniq methd...) **
 Soln:
 Standaredcalc  (parent class)
-  addition() {}
+       addition() {}
 	subtraction() {}
 	multiple() {}
 	division() {}
-  backspace() {}
+       backspace() {}
 
 Programmercalc (child class)
-  addition() {}
+       addition() {}
 	subtraction() {}
 	multiple() {}
 	division() {}
-  backspace() {}
+       backspace() {}
+       bitwise(){}
 
 Scientificcalc (child class)
-  addition() {}
+        addition() {}
 	subtraction() {}
 	multiple() {}
 	division() {}
-  backspace() {}
+        backspace() {}
+        trigonometry(){} // unique method
 
-Reationship between them
-========================
-Standaredcalc
-  private clear() ===> cannot be inherited by any subclass
-  addition() 
-	subtraction() 
-	multiple() 
-	division() 
-  backspace() 
-
-Programmercalc extends (is a) Standaredcalc=> Programmercalc can access all the methods of Standaredcalc=> (if method is not private)
-Scientificcalc extends (is a) Standaredcalc=> Scientificcalc can access all the methods of Standaredcalc
-
-unique method
-==============
-Programmercalc
-  addition() 
-	subtraction() 
-	multiple() 
-	division() 
-   backspace() 
-   bitwise()
-   
-Scientificcalc
-  addition() 
-	subtraction() 
-	multiple() 
-	division() 
-  backspace() 
-  trigonometry()
-
-Over riding
-==================
-re-defining the logic(over-writing) of the method in the child class 
-
-=======Standaredcalc.java===========
-public class Standaredcalc {
-	private void clear(){
-		System.out.println("all can't do this directly-can't be inherited");
-	}
-	public void addition(){
-		System.out.println("Adding");
-	}
-	public void subtraction(){
-		System.out.println("subtracting");
-	}
-	public void multiple(){
-		System.out.println("multiplying");
-	}
-	public void division(){
-		System.out.println("dividing");
-		}
-	public void backspace(){
-		System.out.println("clearence");
-	}
-}
-==========Programmercalc.java=============
-	public class Programmercalc extends Standaredcalc 
-{
-	public void bitwise()
-	{
-		System.out.println("bBinary Digit");
-}
-}
-==============	Scientificcalc================
-public class Scientificcalc extends Standaredcalc{
-	
-	public void trigonometry(){
-		System.out.println("trigonometry Symbols");
-
-}
-}
-============TestInheritance================
-public class TestInheritance {
-
-	public static void main(String[] args) {
-	Standaredcalc s=new Standaredcalc();
-    //s.bitwise(); not created in parent only in Programmercalc class its created
-   s.addition();
-	Programmercalc p=new Programmercalc();
-		p.addition();
-		p.subtraction();
-		p.multiple();
-		p.division();
-		p.backspace();
-		p.bitwise();
-Scientificcalc s1=new Scientificcalc();
-		s1.addition();
-		s1.subtraction();
-		s1.multiple();
-		s1.division();
-		s1.backspace();
-		s1.trigonometry();
-		}
-}
-OUTPUT:
-Adding
-Adding
-subtracting
-multiplying
-dividing
-clearence
-bBinary Digit
-Adding
-subtracting
-multiplying
-dividing
-clearence
-trigonometry Symbols
 
 ========================Task3=====================
 ***Radio, Tv, Dvd Player - identify the Apt parent class and implement inheritance***
@@ -182,7 +75,7 @@ Mnanager(child class)
   EmpId(){}
   department(){}
   work(){}
-  emp records(){}
+  emp records(){} //unique method
 Finance(child class)
   Empname(){}
   EmpId(){}
